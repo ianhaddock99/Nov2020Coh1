@@ -1,0 +1,25 @@
+total 9
+-rw-r--r-- 1 Ian-H 197609 213 Nov 10 12:37 deserts.txt
+-rw-r--r-- 1 Ian-H 197609 183 Nov 10 12:37 glaciers.txt
+-rw-r--r-- 1 Ian-H 197609   8 Nov 10 15:21 hello.txt
+-rw-r--r-- 1 Ian-H 197609 137 Nov 10 12:37 islands.txt
+-rw-r--r-- 1 Ian-H 197609 103 Nov 10 12:37 lakes.txt
+-rw-r--r-- 1 Ian-H 197609 118 Nov 10 12:37 mountains.txt
+-rw-r--r-- 1 Ian-H 197609   0 Nov 10 15:31 myDirectoryContents.txt
+-rw-r--r-- 1 Ian-H 197609  12 Nov 10 15:28 newFile.txt
+-rw-r--r-- 1 Ian-H 197609  73 Nov 10 12:37 oceans.txt
+-rw-r--r-- 1 Ian-H 197609 206 Nov 10 12:37 volcanoes.txt
+total 14
+drwxr-xr-x 1 Ian-H 197609   0 Nov 10 15:31 .
+drwxr-xr-x 1 Ian-H 197609   0 Nov 10 12:37 ..
+-rw-r--r-- 1 Ian-H 197609   0 Nov 10 12:37 .gitignore
+-rw-r--r-- 1 Ian-H 197609 213 Nov 10 12:37 deserts.txt
+-rw-r--r-- 1 Ian-H 197609 183 Nov 10 12:37 glaciers.txt
+-rw-r--r-- 1 Ian-H 197609   8 Nov 10 15:21 hello.txt
+-rw-r--r-- 1 Ian-H 197609 137 Nov 10 12:37 islands.txt
+-rw-r--r-- 1 Ian-H 197609 103 Nov 10 12:37 lakes.txt
+-rw-r--r-- 1 Ian-H 197609 118 Nov 10 12:37 mountains.txt
+-rw-r--r-- 1 Ian-H 197609 570 Nov 10 15:31 myDirectoryContents.txt
+-rw-r--r-- 1 Ian-H 197609  12 Nov 10 15:28 newFile.txt
+-rw-r--r-- 1 Ian-H 197609  73 Nov 10 12:37 oceans.txt
+-rw-r--r-- 1 Ian-H 197609 206 Nov 10 12:37 volcanoes.txt

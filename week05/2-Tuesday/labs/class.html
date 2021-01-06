@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        background-color: yellow;
+        padding: 20px;
+        width: 200 px;
+        height: 200px;
+    }
+
+    p{
+        background-color: pink;
+        padding: 20px;
+    }
+
+</style>
+<body>
+    hello world
+
+    <button onclick="alert('hello')">Click Me</button>
+
+    <div onmouseover="greeting()">
+        Hello
+    </div>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus sed exercitationem tempore minus dolores blanditiis fugit ullam, iste sit necessitatibus et quisquam reiciendis recusandae quas quis? Quam doloribus corporis explicabo!
+    </p>
+</body>
+
+<script>
+    const greeting = () => {
+        console.log("hello there");
+    }
+
+    //retrieve our element out of dom
+    let p = document.querySelector('p');
+    //attach event listenner to the element
+    p.onclick = ()=>{
+        p.setAttribute('style', 'background-color: orange;padding: 20px;')
+    }
+    //set the attached element to a function
+</script>
+
+</html>

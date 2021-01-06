@@ -1,0 +1,42 @@
+body{
+    margin: 0px;
+    background-color: gray;
+}
+
+.parent{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.header{
+    background-color: yellow;
+    height: 10vh;
+}
+
+.flexConRow{
+    height: 100%;
+    flex-direction: row;
+    display: flex;
+}
+
+
+.left{
+    background-color: green;
+    height: 80vh;
+    width: 30%;
+    margin: 10px;
+    
+}
+
+.right{
+    background-color: purple;
+    height: 80vh;
+    width:70%;
+    margin: 10px
+}
+
+.footer{
+    background-color: red;
+    height: 10vh;
+}

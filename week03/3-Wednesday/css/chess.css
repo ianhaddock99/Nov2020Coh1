@@ -1,0 +1,59 @@
+.box{
+    width: 90vw;
+    height: 100vh;
+
+    background-color: rgb(146, 146, 146);
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+
+    display:flex;
+    flex-direction: row;
+}
+
+.flexCol{
+    height: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    display: flex;
+}
+
+.flexRow{
+    height: 100%;
+    flex-direction: row;
+    align-items: stretch;
+    display: flex;
+}
+
+.flex1{
+    flex:1;
+}
+
+.flex2{
+    flex:2;
+}
+
+.flex2{
+    flex:3;
+}
+
+.black{
+    background-color:black;
+}
+
+.white{
+    background-color:white;
+}
+
+.border{
+    border: 2px black solid;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}

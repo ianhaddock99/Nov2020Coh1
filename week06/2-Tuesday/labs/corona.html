@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            color: red;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <ul></ul>
+    <script>
+        fetch('https://corona.lmao.ninja/v2/states')
+        .then(result =>result.json())
+        .then(data => {
+            console.log(data);
+                
+                let htmlArr = data.map(obj =>{
+                    return `<li> State:${obj.state} Cases:${obj.cases}</li>`
+                })
+                let ul = document.querySelector('ul');
+                ul.innerHTML = htmlArr.join('');
+        })
+
+
+        
+    </script>
+</body>
+</html>

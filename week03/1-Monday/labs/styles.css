@@ -1,0 +1,13 @@
+
+        #dark {
+            background-color: black;
+            color: goldenrod;
+        }
+
+        #light {
+            background-color: white;
+            color: black;
+        }
+        p {
+        font-family: 'Nerko One', cursive;
+        }

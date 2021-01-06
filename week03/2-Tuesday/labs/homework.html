@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework1</title>
+    <style>
+        body{
+            margin:0px;
+        }
+
+        header{
+            background-color: gray;
+            height: 200px;
+            text-align: center;
+            padding: 5px;
+        }
+        nav{
+            background-color:red;
+            float: left;
+            width: 30%;
+            height: 400px;
+        }
+        article{
+            background-color: rgb(9, 54, 179);
+            height: 400px;
+            text-align: center;
+            width:70%;
+            float: right;
+
+        }
+        footer{
+            background-color: rgb(212, 209, 12);
+            height: 200px;
+            text-align: center;
+            padding: 5px
+        }
+
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <header><h1>Header</h1>
+    </header>
+    <section>
+    <nav>
+        <ul>
+            <li>NavBar</li>
+            <li>Text2</li>
+        </ul>
+    </nav>
+    <article><p>Main Content</p>
+    </article>
+    </section>
+
+    <footer><p>Footer</p>
+    </footer>
+</body>
+</html>

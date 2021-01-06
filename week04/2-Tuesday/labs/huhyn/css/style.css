@@ -1,0 +1,68 @@
+/* 
+
+
+black -#000000
+navy - #14213D
+gold - # FCA311 (accent)
+light gray - # E5E5E5
+white = #FFFFFF
+
+font, background colors
+*/
+
+body{
+    margin: 0px;
+
+}
+
+.cp-bg-black{
+    background-color: black;
+}
+
+.cp-bg-navy{
+    background-color: #14213D;
+}
+
+.cp-bg-gold{
+    background-color: #FCA311;
+}
+
+.cp-bg-gray{
+    background-color: #E5E5E5;
+}
+
+.cp-bg-white{
+    background-color: white;
+}
+
+.cp-text-black{
+    color: black;
+}
+
+.cp-text-navy{
+    color: #14213D;
+}
+
+.cp-text-gold{
+    color: #FCA311;
+}
+
+.cp-text-gray{
+    color: #E5E5E5;
+}
+
+.cp-text-white{
+    color: white;
+}
+
+.dark{
+    background-color: grey;
+    width: 100%;
+    height: 400px;
+}
+.light{
+    background-color: white;
+    width: 100%;
+    height: 400px;
+}
+
