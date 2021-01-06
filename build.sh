@@ -11,7 +11,7 @@ do
     do
         echo $day
         mkdir "${week}/${day}"
-         
+
         mkdir "${week}/${day}/labs"
         touch "${week}/${day}/labs/.gitignore"
 
