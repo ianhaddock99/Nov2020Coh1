@@ -10,6 +10,7 @@ it should return an object like this:
     minus: -54 // sum of all negative numbers
 }
 
+<<<<<<< HEAD
 var nums = [10, -12, 30, -1, -8, 0, 14, -33, 20];
 
 // console.log(sumPlusMinus(nums));
@@ -27,3 +28,15 @@ function sumPlusMinus(nums){
     
 sumPlusMinus(nums)
 console.log(obj);
+=======
+*/
+
+
+var nums = [10, -12, 30, -1, -8, 0, 14, -33, 20];
+
+// Write code here
+
+console.log(sumPlusMinus(nums));
+// {plus: 74, minus: -54}
+
+>>>>>>> 33954064214238bf058d493bb79e445aaa71d877

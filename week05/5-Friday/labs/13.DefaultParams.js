@@ -19,6 +19,7 @@ square();
 //BEFORE: NaN
 //AFTER: Uncaught Error: Function square requrires an agrument
 
+<<<<<<< HEAD
 
 
 let add = (a=0,b=0) => {
@@ -26,3 +27,5 @@ let add = (a=0,b=0) => {
 }
 
 console.log(add(4));
+=======
+>>>>>>> 33954064214238bf058d493bb79e445aaa71d877

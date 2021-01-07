@@ -3,6 +3,7 @@
 Declare mult() function that will multiply values of the x,y,z 
 fields of the passed object
 */
+<<<<<<< HEAD
 // var obj = {
 //     x: 5,
 //     y: 20,
@@ -17,6 +18,15 @@ fields of the passed object
 // }
 // console.log(mult(obj));
 
+=======
+var obj = {
+    x: 5,
+    y: 20,
+    z: 3
+}
+
+console.log(mult(obj));
+>>>>>>> 33954064214238bf058d493bb79e445aaa71d877
 //300
 
 
@@ -29,6 +39,7 @@ If input object doesn't have postsQuantitiy field it should get default value 0.
 */
 
 
+<<<<<<< HEAD
 // var person1 = {
 //     name: "Mike",
 //     info: {
@@ -73,4 +84,22 @@ If input object doesn't have postsQuantitiy field it should get default value 0.
 // var luke = { occupation: 'jedi', father: { fName: "anakin", lName: "skywalker"} };
 // let {occupation:o, father:f} = luke;
 // console.log(f);
+=======
+var person1 = {
+    name: "Mike",
+    info: {
+        country: "Spain",
+        age: 23
+    },
+    postsQuantitiy: 100
+}
+
+var person2 = {
+    name: "Alice",
+    info: {
+        country: "Italy",
+        age: 25
+    }
+}
+>>>>>>> 33954064214238bf058d493bb79e445aaa71d877
 

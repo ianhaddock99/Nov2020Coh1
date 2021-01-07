@@ -1,6 +1,7 @@
 # 1. Create a new list called "planets" that holds all of the names of the planets
 # in our solar system. Print the list of planets on the command line.
 
+<<<<<<< HEAD
 # planet1 = "Earth"
 # planet2 = "Jupiter"
 # planet3 = "Neptune"
@@ -14,6 +15,19 @@ planets = ["Earth", "Jupiter", "Neptune", "Mars", "Saturn", "Mercury", "Uranus",
 print(planets)
 # 2. Print out how many elements are in the planet list
 print(len(planets))
+=======
+planet1 = "Earth"
+planet2 = "Jupiter"
+planet3 = "Neptune"
+planet4 = "Mars"
+planet5 = "Saturn"
+planet6 = "Mercury"
+planet7 = "Uranus"
+planet8 = "Venus"
+
+# 2. Print out how many elements are in the planet list
+
+>>>>>>> 33954064214238bf058d493bb79e445aaa71d877
 
 # 3. Create a while loop that iterates through each of the items in the planet list
 # and changes them to lowercase .

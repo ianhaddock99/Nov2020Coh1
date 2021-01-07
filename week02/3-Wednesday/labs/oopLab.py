@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 # class Student: # 1. Create an empty class called "Student"
 #     def __init__(self, name):
 #         self.name = name
@@ -37,6 +38,15 @@
 # 5c. Run your lab.py again and you should see a print statement for each student object
 # That you created
 =======
+=======
+
+# 1. Create an empty class called "Student"
+
+
+#2. Create 5 students objects (instances of the class "Student") of "Student" types
+
+
+>>>>>>> 33954064214238bf058d493bb79e445aaa71d877
 #3a. Create a "greeting" method inside of the class "Student" class that 
 # takes as a parameter "name". The return of the  method should be
 # "Good morning {name}" 
@@ -49,7 +59,10 @@
 #5b. Create a print statement inside of the constructor
 #5c. Run your lab.py again and you should see a print statement for each student object 
 # That you created 
+<<<<<<< HEAD
 >>>>>>> 915f1d5b41201c1da6377b24f8dee08c0bb9cfa7
+=======
+>>>>>>> 33954064214238bf058d493bb79e445aaa71d877
 
 
 #6a. Pass in "name" as a parameter to your Student constructor. 
@@ -109,6 +122,7 @@
 # - model 
 # - color
 
+<<<<<<< HEAD
 # class Car:
 #     def __intit__(self, make, model, color):
 #         self.make = make
@@ -139,6 +153,8 @@
 # tesla.carDetails()
 
 
+=======
+>>>>>>> 33954064214238bf058d493bb79e445aaa71d877
 
 
 
@@ -156,6 +172,7 @@
 
 # COMPOSITION
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 """
 
@@ -471,3 +488,6 @@ class Store(object):
 =======
 
 >>>>>>> 915f1d5b41201c1da6377b24f8dee08c0bb9cfa7
+=======
+
+>>>>>>> 33954064214238bf058d493bb79e445aaa71d877

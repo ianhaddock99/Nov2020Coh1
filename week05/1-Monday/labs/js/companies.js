@@ -10,6 +10,7 @@ const companies = [
     { name: "Company Nine", category: "Retail", start: 1981, end: 1989 }
 ];
 
+<<<<<<< HEAD
 // forEach name, start, end
 
 
@@ -82,6 +83,22 @@ const companies = [
 
 // var newAges = ages.map(arrVAl => arrVAl +5)
 
+=======
+const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+
+
+// Filter out all ages greater than 35 
+// var ageFilter = ages.filter((age)=> age<=35)
+
+
+// Filter all even numbers
+
+
+/// map through ages array and return a new ages array where 5 is added to each element.
+
+
+// var newAges = ages.map(arrVAl => arrVAl +5)
+>>>>>>> 33954064214238bf058d493bb79e445aaa71d877
 //map through the companies array and change the end date to 2020
 
 

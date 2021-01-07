@@ -1,6 +1,7 @@
 // ***Rest Operator
 //Assign values to the a, b, c variables using destructuring and rest operator
 
+<<<<<<< HEAD
 // var a, b, c;
 // var arr = [1, 2, 3, 4, 5, 6, 7]
 // console.log(a);
@@ -22,4 +23,15 @@ let sum = (...args) => {
 
 let result = sum(5);
 console.log(result);
+=======
+var a, b, c;
+var arr = [1, 2, 3, 4, 5, 6, 7]
+console.log(a);
+// 1
+console.log(b);
+//2
+
+console.log(c);
+//[3, 4, 5, 6, 7]
+>>>>>>> 33954064214238bf058d493bb79e445aaa71d877
 

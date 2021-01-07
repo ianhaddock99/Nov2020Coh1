@@ -11,7 +11,11 @@ do
     do
         echo $day
         mkdir "${week}/${day}"
+<<<<<<< HEAD
 
+=======
+         
+>>>>>>> 33954064214238bf058d493bb79e445aaa71d877
         mkdir "${week}/${day}/labs"
         touch "${week}/${day}/labs/.gitignore"
 

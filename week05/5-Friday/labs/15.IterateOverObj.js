@@ -5,6 +5,7 @@ number.
 Ensure that iteration is done only over own properties of the object
 */
 
+<<<<<<< HEAD
 // var nums = {
 //     a: 10,
 //     b: 20,
@@ -50,3 +51,16 @@ console.log(sumObjectValues(nums));
 //     let value = obj[key];
 //     console.log(key);
 // }
+=======
+var nums = {
+    a: 10,
+    b: 20,
+    c: "string",
+    d: 12
+}
+
+// Write code here 
+
+console.log(sumObjectValues(nums));
+// 42
+>>>>>>> 33954064214238bf058d493bb79e445aaa71d877
