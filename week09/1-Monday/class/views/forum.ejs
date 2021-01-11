@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    Forum
+
+    <h1>Forum</h1>
 
     <form action="">
-        Name <input type="text" name="name" id="name"> <br>
-        Message <textarea name="message" id="" cols="30" rows="5" id="message"></textarea>
+        Name<br> 
+        <input type="text"  id="name"><br>
+        Message<br>
+        <textarea cols="30" rows="5"  id="message"></textarea>
+        <br>
         <input type="submit">
     </form>
 
     <div id="comments">
 
     </div>
+
     <script>
-
         let form = document.querySelector('form');
-
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('submit', (e)=>{
             e.preventDefault();
-
             fetch('/forum', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
@@ -31,14 +35,16 @@
                     name: document.querySelector('#name').value,
                     message: document.querySelector('#message').value
                 })
+                
             })
             .then(response => response.json())
             .then(data => {
-                console.log(data);
+                console.log(data)
                 let comments = document.querySelector('#comments')
-                comments.innerHTML += `${data.name} <br> ${data.message}`
+                comments.innerHTML += `<b>${data.name}</b> <i>${Date.now()}</i> <br>${data.message}<br>`
             })
         })
     </script>
 </body>
+
 </html>
