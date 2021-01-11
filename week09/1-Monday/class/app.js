@@ -11,6 +11,7 @@ app.use(express.static('public'))
 
 //route references
 app.use(require('./routes'))
+app.use(require('./routes/forum'))
 
 
 app.listen(3000, ()=>{
