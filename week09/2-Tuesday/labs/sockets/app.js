@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const socket = require('socket.io');
+
 app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
     res.render('index')
