@@ -1,0 +1,17 @@
+const express = require('express');
+const router = express.Router();
+const db = require('../models/database');
+
+router.get('/dishes', (req, res) => {
+
+    db.query(`SELECT * FROM restaurants`)
+    .then(records =>{
+        //records an array of objects
+        res.render('dishes', {
+            dishes: records
+        });
+    })
+    
+})
+
+module.exports = router;
