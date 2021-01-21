@@ -1,0 +1,18 @@
+author
+-id 
+-firstName
+-lastName
+-bio
+-imageURL
+-email
+-twitter
+-linkedin
+
+
+blogs
+-id
+-title
+-authorID
+-body
+-isPublished true  or false
+-publishDate
