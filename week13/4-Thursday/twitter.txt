@@ -1,0 +1,17 @@
+1 billion
+
+200 million active daily
+
+- favorite 200M * 5 = 1 billion favorites
+- look other twitter pages
+- look at images
+
+20 tweets
+
+200 million users (2 + 5) + 20 = 28 billion/day
+
+storage estimates
+
+140 characters => 30 bytes + 280 bytes
+
+
