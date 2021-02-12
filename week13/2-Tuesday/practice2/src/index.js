@@ -5,6 +5,7 @@ import Forms from './components/Forms'
 import FormHook from './components/Form-Hook'
 import Parent from './components/LiftingState/Parent'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ProjectManagement from './components/ProjectManagement/ProjectManagement'
 // import App from './App';
 // import App from './App2'; //Movie witch cache
 // import StopWatch from './StopWatch';
@@ -56,6 +57,7 @@ ReactDOM.render(
           <Route  path='/forms' component={Forms}/>
           <Route  path='/formhook' component={FormHook}/>
           <Route  path='/lifting_state' component={Parent}/>
+          <Route  path='/project_management' component={ProjectManagement}/>
           <Route  component={NoMatch}/>
 
           
