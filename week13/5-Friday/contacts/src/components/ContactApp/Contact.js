@@ -4,7 +4,9 @@ import ContactItem from './ContactItem'
 const Contact = ({contacts, onDelete}) => {
   return (
     <>
-      {contacts.map(contact =>{
+      {contacts
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .map(contact =>{
           return <ContactItem key={contact.id} con={contact} onDelete={onDelete}/>
       })}
     </>
