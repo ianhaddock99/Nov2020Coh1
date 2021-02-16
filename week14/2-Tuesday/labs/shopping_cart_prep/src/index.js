@@ -9,6 +9,7 @@ import {
   Route, Switch
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CartHooks from './components/hooks/Cart'
 
 //redux
 import {Provider} from 'react-redux'
@@ -28,7 +29,7 @@ ReactDOM.render(
             <Route exact path='/' component={App}/>
             <Route path='/cart' component={Cart}/>
             <Route path='/products' component={Products}/>
-            
+            <Route path='/cart_hooks' component={CartHooks}/>
           </Switch>
         </BaseLayout>
       </Router>

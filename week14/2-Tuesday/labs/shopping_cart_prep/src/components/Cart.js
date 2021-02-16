@@ -15,7 +15,11 @@ class Cart extends Component {
 
         <ul>
           {this.props.products.map(p => {
-            return <li key={p.id}>{p.productName} ${p.price}</li>
+            return <li key={p.id}>{p.productName} ${p.price}
+            
+                      <DeleteProduct product={p} />
+            
+                  </li>
           })}
         </ul>
       </>
