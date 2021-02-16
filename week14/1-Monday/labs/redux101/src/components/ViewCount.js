@@ -1,21 +1,20 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 import {connect} from 'react-redux'
 
 class ViewCount extends Component {
   render() {
-    return (
-      <>
+    return <>
         count holder
+        <br />
         <h1>{this.props.count}</h1>
-      </>
-    )
+    </>;
   }
 }
 
-const mapStatetoProps = (state) => {
-  return {
-    count: state.count
-  }
+const mapStateToProps = (state) => {
+    return {
+        count: state.count
+    }
 }
 
-export default connect(mapStatetoProps, null)(ViewCount)
+export default connect(mapStateToProps, null)(ViewCount);

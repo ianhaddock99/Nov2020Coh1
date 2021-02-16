@@ -1,9 +1,15 @@
-import React from 'react'
+
+import React from 'react';
+import {useSelector} from 'react-redux'
 
 const ViewCountHooks = () => {
+  const count = useSelector(state => state.count);
   return (
     <>
-      View Count Hooks
+      <h1>View Count Hooks</h1>
+
+      <h3>{count}</h3>
+
     </>
   )
 }

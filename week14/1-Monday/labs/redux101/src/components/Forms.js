@@ -1,17 +1,32 @@
-import React from 'react'
+import React, {useState} from "react";
+import {addPerson} from '../actions/Persons'
+import {useDispatch, useSelector} from 'react-redux'
 
 const Forms = () => {
-  return (
-    <>
-      <form>
-          First Name:<input type="text" />
-          Last Name:<input type="text" />
+    const [firstName, setFirstName] = useState('')
+    const [lastName, setLastName] = useState('')
+    const persons = useSelector(state => state.persons)
+    const dispatch = useDispatch();
+    //reducer 
 
-          <button type="submit"></button>
+    const handleOnSubmit = (e) => {
+      e.preventDefault();
+      dispatch(addPerson({
+        firstName: firstName,
+        lastName: lastName
+      }))
+    }
+  return <>
+    <form onSubmit={handleOnSubmit} >
+        First Name: <input value={firstName} onChange={(e)=>setFirstName(e.target.value)} type="text"/> <br />
+        Last Name: <input value={lastName} onChange={(e)=>setLastName(e.target.value)} type="text"/> <br />
 
-      </form>
-    </>
-  )
-}
+        <button type="submit">Submit</button>
+    </form>
 
-export default Forms
+    {persons.map(person => 
+    <li key={person.firstName}>{person.firstName} {person.lastName}<button>X</button></li>)}
+  </>;
+};
+
+export default Forms;
