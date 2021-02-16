@@ -10,7 +10,7 @@ class Cart extends Component {
         <h1>
           Shopping Cart
         </h1>
-
+        <AddProduct />
         Total Cost: ${this.props.totalCost}
 
         <ul>
