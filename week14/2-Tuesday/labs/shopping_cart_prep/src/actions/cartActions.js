@@ -4,6 +4,9 @@ export const addProduct = (product) => {
         data: product
     }
 }
+
+
+
 export const deleteProduct = (product) => {
     return {
         type: "DELETE_PRODUCT",

@@ -4,8 +4,7 @@ import AddProduct from './AddProduct';
 import DeleteProduct from './DeleteProduct'
 
 const Cart = () => {
-
-    const products = useSelector(state => state.cart);
+    const products = useSelector(state => state.list);
     const totalCost = useSelector(state => state.totalCost);
 
   return <>
@@ -16,7 +15,7 @@ const Cart = () => {
     total Cost: ${totalCost}
     <ul>
         {products.map(p => {
-            return <li key={p.id}>{p.productName} ${p.price} <DeleteProduct product={p}/></li>
+            return <li key={p.id}>{p.productName}<DeleteProduct product={p}/></li>
         })}
     </ul>
 

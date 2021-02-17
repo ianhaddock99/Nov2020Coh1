@@ -10,11 +10,13 @@ import {
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartHooks from './components/hooks/Cart'
+import List from './components/hooks/List'
 
 //redux
 import {Provider} from 'react-redux'
 import {createStore} from 'redux'
-import reducer from './reducers/cartReducer'
+// import reducer from './reducers/cartReducer'
+import reducer from './reducers/listReducer'
 
 let store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
@@ -30,6 +32,7 @@ ReactDOM.render(
             <Route path='/cart' component={Cart}/>
             <Route path='/products' component={Products}/>
             <Route path='/cart_hooks' component={CartHooks}/>
+            <Route path='/todoList' component={List}/>
           </Switch>
         </BaseLayout>
       </Router>
