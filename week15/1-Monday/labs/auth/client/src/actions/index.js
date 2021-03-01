@@ -1,44 +1,54 @@
-
 import actionTypes from './actionTypes';
-import axios from 'axios'
+import axios from 'axios';
 
-export const signUp = (formData) => {
-
-    console.log(formData)
-  //take username and password 
-  //call server api
-  //wait for an authenticated token
-  //call reducer to store token
-
-  return async dispatch=>{
-    try{
-        let response = await axios.post('/signup', formData)
-
-        console.log(response.data.token);
-
-        //dispatch action to reducer
-        dispatch({type: "AUTH_USER", data: response.data.token})
-        localStorage.setItem('token', response.data.token);
-    }
-    catch(e){
-        console.log('error')
-        console.log(e)
-    }
-  }
+export const signUp = (formData, cb) => {
     
+    console.log(formData);
+    //take username and passpword
+    //call our server api 
+    //wait for an authenticated token 
+    //call reducer to store token
+
+    //formData => {email, password}
+    
+    return async dispatch=>{
+        
+        try{
+            let response = await axios.post('/signup', formData) //formdata will put on header
+
+            console.log(response.data.token);//token
+
+            //dispatch action to reducer 
+
+            dispatch({type: "AUTH_USER", data: response.data.token});
+
+            localStorage.setItem('token', response.data.token);
+
+            cb();
+
+        }
+        catch(e){
+            console.log('error');
+            console.log(e);
+        }
+    }
 }
 
+//logging into application
 
-//logging in app
-export const signIn = (formData) => {
-    return async dispatch => {
+export const signin = (formData, cb) => {
+    
+    return async dispatch =>{
+
         try{
             let response = await axios.post('/signin', formData);
 
             dispatch({type: "AUTH_USER", data: response.data.token});
 
-            console.log('signin', response.data.token)
+            console.log('signin', response.data.token);
             localStorage.setItem('token', response.data.token);
+
+            cb();
         }
         catch(e){
 
@@ -48,15 +58,21 @@ export const signIn = (formData) => {
 
 //logout
 
-export const signOut = () => {
+export const signout = (cb) => {
 
-    localStorage.removeItem('token');
-    
-    console.log('signing out')
-    return {
-        type: "AUTH_USER",
-        data: ''
+    return dispatch=> {
+        localStorage.removeItem('token');
+        dispatch({
+            type: "AUTH_USER",
+            data: ''
+        })
+
+        console.log('signing out');
+
+        cb();
     }
+      
+    
 }
 
 

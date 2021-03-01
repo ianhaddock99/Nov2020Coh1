@@ -1,25 +1,35 @@
 import React, {useState} from "react";
-import { Link } from 'react-router-dom'
-import {useDispatch} from 'react-redux'
-import {signUp} from '../../actions/index'
-
+import { Link } from 'react-router-dom';
+import {useDispatch} from 'react-redux';
+import {signUp} from '../../actions/index';
+import {useHistory} from 'react-router-dom'
 
 const Signup = () => {
 
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('')
+  const [password, setPassword] = useState('');
   const dispatch = useDispatch();
+  const history = useHistory();
 
   const handleSubmit = (e) => {
+    
     e.preventDefault();
+
+    // call action
+    //pass the email address and password to our action
+    //dispatch(sinup(), cb)
 
     dispatch(signUp({
       email: email,
       password: password
+    }, ()=>{
+      console.log('pushing to another page');
+      history.push('/feature');
     }))
 
+
+
   }
-  
 
   return (
   <div className="mt-5">
@@ -40,7 +50,7 @@ const Signup = () => {
               </div>
 
               <div className="form__field">
-                <input type="password" onChange={(e)=>setPassword(e.target.value)} value={password} placeholder="enter password" />
+                <input type="password" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder="enter password" />
               </div>
 
               <div className="form__field">

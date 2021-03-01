@@ -1,27 +1,30 @@
 import React, {useState} from "react";
-import { Link } from 'react-router-dom'
-import {useDispatch} from 'react-redux'
-import {signIn} from '../../actions/index'
+import { Link } from 'react-router-dom';
+import {useDispatch} from 'react-redux';
+import {signin} from '../../actions/index';
+import {useHistory} from 'react-router-dom'
 
 
 const Signin = () => {
 
-const [email, setEmail] = useState('')
-const [password, setPassword] = useState('');
-const dispatch = useDispatch();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const dispatch = useDispatch();
+  const history = useHistory();
 
 
-const handleSubmit = (e) => {
-  e.preventDefeault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-  dispatch(signIn({
-    email: email,
-    password: password
-  }))
-}
+    dispatch(signin({
+      email: email,
+      password: password
+    }, ()=>{
+      console.log('pushing to another page');
+      history.push('/feature');
+    }))
 
-
-
+  }
 
   return( 
   <div className="mt-5">
@@ -38,11 +41,17 @@ const handleSubmit = (e) => {
         <form onSubmit={handleSubmit}  className="form">
 
             <div className="form__field">
-              <input type="email" placeholder="info@mailaddress.com" value={email} onChange={(e)=>setEmail(e.target.value)} />
+              <input type="email" placeholder="info@mailaddress.com"
+                value={email}
+                onChange={(e)=>setEmail(e.target.value)}
+               />
             </div>
 
             <div className="form__field">
-              <input type="password" placeholder="••••••••••••" value={password} onChange={(e)=>setPassword(e.target.value)} />
+              <input type="password"
+              value={password}
+              onChange={(e)=>setPassword(e.target.value)}
+               placeholder="••••••••••••" />
             </div>
 
             <div className="form__field">
