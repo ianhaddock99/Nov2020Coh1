@@ -77,7 +77,7 @@ let jwtOptions ={
 
 let jwtLogin = new JwtStrategy(jwtOptions, (payload, done)=>{
     try{
-        let user = await db.user.findByPk(payload.sub)
+        let user = db.user.findByPk(payload.sub)
         if(user){
             done(null, user);
         }
